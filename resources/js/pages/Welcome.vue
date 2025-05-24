@@ -7,11 +7,14 @@
 
     <Modal v-model="showModal" title="Testing modal">
         <div>
-            <div>
-                <Label>Your Name</Label>
-                <Input placeholder="John Doe" />
-            </div>
+            <Label>Your Name</Label>
+            <Input placeholder="John Doe" />
         </div>
+
+        <template #footer>
+            <Button variant="ghost">Cancel</Button>
+            <Button>Create your account</Button>
+        </template>
     </Modal>
 </template>
 
